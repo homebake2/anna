@@ -18,7 +18,18 @@ const app = document.getElementById('app');
 const muteBtn = document.getElementById('mute-btn');
 
 AudioManager.init('assets/music/music.mp3');
-muteBtn.addEventListener('pointerup', () => AudioManager.toggleMute());
+let muteTapCount = 0;
+let muteTapTimer = null;
+muteBtn.addEventListener('pointerup', () => {
+  AudioManager.toggleMute();
+  muteTapCount++;
+  clearTimeout(muteTapTimer);
+  muteTapTimer = setTimeout(() => { muteTapCount = 0; }, 600);
+  if (muteTapCount >= 3) {
+    muteTapCount = 0;
+    manager.next();
+  }
+});
 
 const manager = new SceneManager(app);
 manager.register(SCENES);
