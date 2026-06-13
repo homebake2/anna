@@ -12,7 +12,7 @@ export default class Scene7 {
       <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,27,42,0.85) 0%,rgba(13,27,42,0.3) 60%,transparent 100%)"></div>
       <div class="fullscreen-text" style="justify-content:flex-end;padding-bottom:calc(var(--safe-bottom) + 120px)">
         <p id="s7-l1" style="font-family:var(--f-serif);font-style:italic;font-size:clamp(0.9rem,3.8vw,1.1rem);color:var(--c-white-dim)">Я тебя люблю.</p>
-        <p id="s7-l2" style="font-family:var(--f-serif);font-size:clamp(1.6rem,7vw,2rem);font-weight:600;color:var(--c-white)">Закат на скале у моря.</p>
+        <p id="s7-l2" style="font-family:var(--f-serif);font-size:clamp(1.6rem,7vw,2rem);font-weight:600;color:var(--c-white)">❤️</p>
         <p id="s7-l3" style="font-family:var(--f-serif);font-style:italic;font-size:clamp(1rem,4.2vw,1.25rem);color:var(--c-gold)">Всё что было до — привело сюда.</p>
         <p id="s7-l4" style="font-family:var(--f-serif);font-size:clamp(1rem,4vw,1.15rem);color:var(--c-white-dim)">Сюда — это к тебе. К нам.</p>
       </div>
