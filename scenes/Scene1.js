@@ -108,7 +108,7 @@ export default class Scene1 {
   }
 
   _afterVideos(videoWrap, photos) {
-    window.__audioManager.resume();
+    window.__audioManager.start();
 
     gsap.to(videoWrap, {
       opacity: 0,

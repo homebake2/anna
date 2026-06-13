@@ -24,7 +24,6 @@ export default class Intro {
     this.el = el;
 
     el.querySelector('#intro-start-btn').addEventListener('pointerup', () => {
-      window.__audioManager.start();
       this.manager.next();
     });
 
